@@ -7,7 +7,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "production": "aws s3 sync out s3://datarozhlas/prez-anketa --acl public-read && aws cloudfront create-invalidation --distribution-id E3ABKG4QXPTL3P --paths '/prez-anketa/*'"
+    "production": "aws s3 sync out s3://datarozhlas/prez-anketa --delete --acl public-read && aws cloudfront create-invalidation --distribution-id E3ABKG4QXPTL3P --paths '/prez-anketa/*'"
   },
   "dependencies": {
     "@next/font": "13.1.1",
