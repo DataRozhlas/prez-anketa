@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Pavel Fischer",
+    "age": 57,
+    "job": "senátor Parlamentu České republiky",
+    "city": "Praha",
+    "party": "bezpartijní"
+  },
+  {
+    "id": 2,
+    "name": "Jaroslav Bašta",
+    "age": 74,
+    "job": "poslanec",
+    "city": "Praha",
+    "party": "SPD"
+  },
+  {
+    "id": 3,
+    "name": "Josef Středula",
+    "age": 55,
+    "job": "předseda ČMKOS",
+    "city": "Praha",
+    "party": "bezpartijní"
+  },
+  {
+    "id": 4,
+    "name": "Petr Pavel",
+    "age": 61,
+    "job": "generál ve výslužbě",
+    "city": "Černouček",
+    "party": "bezpartijní"
+  },
+  {
+    "id": 5,
+    "name": "Tomáš Zima",
+    "age": 56,
+    "job": "profesor vysoké školy, lékař",
+    "city": "Praha",
+    "party": "bezpartijní"
+  },
+  {
+    "id": 6,
+    "name": "Danuše Nerudová",
+    "age": 44,
+    "job": "ekonomka, vysokoškolská pedagožka",
+    "city": "Kuřim",
+    "party": "bezpartijní"
+  },
+  {
+    "id": 7,
+    "name": "Andrej Babiš",
+    "age": 68,
+    "job": "poslanec",
+    "city": "Průhonice",
+    "party": "ANO"
+  },
+  {
+    "id": 8,
+    "name": "Karel Diviš",
+    "age": 46,
+    "job": "výkonný ředitel IT firmy",
+    "city": "Praha",
+    "party": "bezpartijní"
+  },
+  {
+    "id": 9,
+    "name": "Marek Hilšer",
+    "age": 46,
+    "job": "vysokoškolský učitel, senátor",
+    "city": "Praha",
+    "party": "MHS"
+  }
+]

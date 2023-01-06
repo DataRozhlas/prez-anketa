@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "production": "aws s3 sync out s3://datarozhlas/prez-anketa --acl public-read && aws cloudfront create-invalidation --distribution-id E3ABKG4QXPTL3P --paths '/prez-anketa/*'"
   },
   "dependencies": {
     "@next/font": "13.1.1",
@@ -15,6 +16,7 @@
     "@types/react-dom": "18.0.10",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
+    "framer-motion": "^8.2.4",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",

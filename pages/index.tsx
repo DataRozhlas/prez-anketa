@@ -1,7 +1,11 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import { Reorder } from "framer-motion";
+import { useState } from "react";
+import candidates from "../data/candidates.json";
 
 export default function Home() {
+  const [items, setItems] = useState(candidates);
+
   return (
     <>
       <Head>
@@ -19,6 +23,26 @@ export default function Home() {
         <h2 className="pb-0 text-sm leading-5">
           Výchozí řazení je dané vylosovaným číslem kandidátní listiny
         </h2>
+        <div className="px-1 pt-3">
+          <Reorder.Group
+            className="space-y-3"
+            as="ol"
+            role="list"
+            axis="y"
+            values={items}
+            onReorder={setItems}
+          >
+            {items.map((item) => (
+              <Reorder.Item
+                key={item.id}
+                value={item}
+                className="cursor-grab overflow-hidden rounded-md bg-white px-6 py-4 shadow active:cursor-grabbing"
+              >
+                {`${items.indexOf(item) + 1}. ${item.name}`}
+              </Reorder.Item>
+            ))}
+          </Reorder.Group>
+        </div>
       </main>
     </>
   );
