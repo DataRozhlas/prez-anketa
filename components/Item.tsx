@@ -25,7 +25,7 @@ const Item = ({ item, items }: ItemProps) => {
     <Reorder.Item
       key={item.id}
       value={item}
-      className="relative flex cursor-grab items-center space-x-3 overflow-hidden rounded-lg border border-gray-300 bg-white px-3 py-3 shadow-md focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400 active:cursor-grabbing"
+      className="pointer-events-none relative flex cursor-grab items-center space-x-3 overflow-hidden rounded-lg border border-gray-300 bg-white px-3 py-3 shadow-md focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400 active:cursor-grabbing"
       dragListener={isMobile ? false : true}
       dragControls={dragControls}
     >
@@ -37,7 +37,7 @@ const Item = ({ item, items }: ItemProps) => {
         <p className="truncate text-sm text-gray-500">{`${item.age} let, ${item.city}`}</p>
         <p className="truncate text-sm text-gray-500">{item.job}</p>
       </div>
-      <div className="min-w-0 justify-end">
+      <div className="pointer-events-auto min-w-0 justify-end">
         <ReorderIcon dragControls={dragControls}></ReorderIcon>
       </div>
     </Reorder.Item>

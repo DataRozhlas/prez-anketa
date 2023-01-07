@@ -15,7 +15,7 @@ interface ImageProps {
 const CandidateImage = ({ item, dragControls }: ImageProps) => {
   return (
     <div
-      className="flex-shrink-0"
+      className="pointer-events-auto flex-shrink-0"
       onPointerDown={(event) => dragControls.start(event)}
     >
       <Image
