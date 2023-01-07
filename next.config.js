@@ -3,6 +3,7 @@ const nextConfig = {
   basePath: "/prez-anketa",
   reactStrictMode: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
