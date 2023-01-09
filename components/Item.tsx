@@ -15,6 +15,7 @@ interface ItemProps {
 
 let isMobile = false;
 if (typeof window !== "undefined") {
+  console.log(window.innerWidth, isMobile);
   isMobile = window.innerWidth < 620;
 }
 

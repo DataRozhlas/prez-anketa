@@ -16,14 +16,14 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <main>
         <h1 className="text-xl font-bold leading-6 sm:text-2xl">
           Jak dopadnou volby? Přetažením kandidátů změníte jejich pořadí
         </h1>
         <h2 className="pb-0 text-sm leading-5">
           Výchozí řazení je dané vylosovaným číslem kandidáta
         </h2>
-        <div className="px-1 pt-3">
+        <div className="pt-3">
           <Reorder.Group
             className="space-y-2"
             axis="y"
