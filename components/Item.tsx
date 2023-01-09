@@ -37,9 +37,7 @@ const Item = ({ item, items }: ItemProps) => {
         <p className="truncate text-sm text-gray-500">{`${item.age} let, ${item.city}`}</p>
         <p className="truncate text-sm text-gray-500">{item.job}</p>
       </div>
-      <div className="pointer-events-auto min-w-0 justify-end">
-        <ReorderIcon dragControls={dragControls}></ReorderIcon>
-      </div>
+      <ReorderIcon dragControls={dragControls}></ReorderIcon>
     </Reorder.Item>
   );
 };
