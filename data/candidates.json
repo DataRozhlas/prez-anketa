@@ -16,14 +16,6 @@
     "party": "SPD"
   },
   {
-    "id": 3,
-    "name": "Josef Středula",
-    "age": 55,
-    "job": "předseda ČMKOS",
-    "city": "Praha",
-    "party": "bezpartijní"
-  },
-  {
     "id": 4,
     "name": "Petr Pavel",
     "age": 61,
