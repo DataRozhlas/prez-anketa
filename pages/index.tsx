@@ -3,6 +3,7 @@ import { Reorder } from "framer-motion";
 import { useState, useEffect } from "react";
 import candidates from "../data/candidates.json";
 import Item from "../components/Item";
+import { usePostMessageWithHeight } from "../hooks";
 
 type Email = string;
 type Votes = number;
@@ -13,6 +14,13 @@ export default function Home() {
   const [email, setEmail] = useState<Email>("");
   const [hasChanged, setHasChanged] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const { containerRef, postHeightMessage } =
+    usePostMessageWithHeight("cro_prez_anketa");
+
+  useEffect(() => {
+    postHeightMessage();
+  }, [isSubmitted, postHeightMessage]);
 
   const handlePostClick = () => {
     const http = new XMLHttpRequest();
@@ -30,7 +38,7 @@ export default function Home() {
   };
 
   return (
-    <>
+    <div ref={containerRef}>
       <Head>
         <title>Prezidentská tipovačka</title>
         <meta
@@ -166,6 +174,6 @@ export default function Home() {
           </h2>
         </main>
       )}
-    </>
+    </div>
   );
 }

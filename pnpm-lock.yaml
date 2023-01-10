@@ -9,6 +9,7 @@ specifiers:
   eslint: 8.31.0
   eslint-config-next: 13.1.1
   framer-motion: ^8.2.4
+  lodash: ^4.17.21
   next: 13.1.1
   postcss: ^8.4.20
   prettier: ^2.8.1
@@ -26,6 +27,7 @@ dependencies:
   eslint: 8.31.0
   eslint-config-next: 13.1.1_iukboom6ndih5an6iafl45j2fe
   framer-motion: 8.2.4_biqbaboplfbrettd7655fr4n2y
+  lodash: 4.17.21
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -1672,6 +1674,10 @@ packages:
 
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
+    dev: false
+
+  /lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: false
 
   /loose-envify/1.4.0:
