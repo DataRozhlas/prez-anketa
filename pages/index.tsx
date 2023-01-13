@@ -47,17 +47,29 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      {!isSubmitted && (
+      <main className="flex flex-col items-center">
+        <h1 className="text-center text-2xl font-bold leading-7">
+          Tipovačka skončila
+        </h1>
+        <h2 className="pb-0 pt-1  text-center leading-5">
+          S otevřením volebních místností jsme ukončili příjem tipů.
+        </h2>
+        <h2 className="pb-0 pt-1  text-center leading-5">
+          Výsledky zveřejníme na serveru iROZHLAS.cz v sobotu 14. ledna, autory
+          nejpřesnějších tipů kontaktujeme e-mailem v úterý 17. ledna.
+        </h2>
+      </main>
+      {/* {!isSubmitted && (
         <main className="flex flex-col items-center">
           <h1 className="text-center text-2xl font-bold leading-7">
             Jak dopadne první kolo?
             <br />
-            Přetažením kandidátů změníte jejich pořadí
+            Přetažením kandidátů změníte pořadí
           </h1>
           <h2 className="pb-0 pt-1 text-xs leading-5">
             Výchozí řazení je dané vylosovaným číslem kandidáta
           </h2>
-          <div className="w-full pt-3">
+          <div className="w-full select-none pt-3">
             <Reorder.Group
               className="space-y-2"
               axis="y"
@@ -121,7 +133,8 @@ export default function Home() {
               id="email-description"
             >
               Vyplňte, chcete-li soutěžit o ceny.
-              <br />K ničemu jinému váš e-mail nepoužijeme.
+              <br />K ničemu jinému váš e-mail nepoužijeme a po volbách jej
+              smažeme.
             </p>
           </div>
 
@@ -129,7 +142,7 @@ export default function Home() {
             type="button"
             onClick={handlePostClick}
             disabled={!hasChanged}
-            className="my-14 inline-flex w-10/12 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-lg  font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-25"
+            className="mt-14 mb-3 inline-flex w-10/12 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-lg  font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-25"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +186,7 @@ export default function Home() {
             ceny vstupuje jen ten poslední.
           </h2>
         </main>
-      )}
+      )} */}
     </div>
   );
 }
