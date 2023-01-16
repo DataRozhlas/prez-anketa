@@ -16,9 +16,20 @@ const result = data.map((item: any) => {
 
 result.sort((a: { time: number }, b: { time: number }) => a.time - b.time);
 
-console.log(result);
-
 await Deno.writeTextFile("data/results.csv", d3.csvFormat(result.slice(13)));
+await Deno.writeTextFile("data/results.json", JSON.stringify(result.slice(13)));
+
+const winners = result
+  .slice(13)
+  .filter(
+    (item: any) => item.tip.toString() === [4, 7, 6, 1, 2, 9, 8, 5].toString()
+  )
+  .filter((item: any) => item.email !== "null")
+  .filter((item: any) => item.votes === 1985000);
+
+console.log(winners.length);
+
+await Deno.writeTextFile("data/losers.csv", d3.csvFormat(winners));
 
 // const codeBook = JSON.parse(await Deno.readTextFile("./salaty.json"));
 

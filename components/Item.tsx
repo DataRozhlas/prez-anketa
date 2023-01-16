@@ -11,6 +11,7 @@ interface ItemProps {
     job: string;
   };
   items: {}[];
+  sortable?: boolean;
 }
 
 let isMobile = false;

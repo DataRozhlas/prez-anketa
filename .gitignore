@@ -39,3 +39,6 @@ next-env.d.ts
 
 data/tips.json
 data/results.csv
+data/results.json
+data/winners.csv
+data/losers.csv
